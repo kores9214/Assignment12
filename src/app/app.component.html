@@ -1,0 +1,21 @@
+<h1>Gold:</h1>
+<div>
+  <ul>
+    <li *ngFor="let item of goldTypesAndRateOfInterests | async">
+        <pre>{{ item | json }}</pre>
+    </li>
+  </ul>
+</div>
+
+
+<h1>Silver:</h1>
+<div>
+  <ul>
+    <li *ngFor="let item of silverTypesAndRateOfInterests | async">
+        <pre>{{ item | json }}</pre>
+    </li>
+  </ul>
+</div>
+
+
+<router-outlet></router-outlet>
